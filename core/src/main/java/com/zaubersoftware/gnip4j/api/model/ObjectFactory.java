@@ -1,6 +1,8 @@
 
 package com.zaubersoftware.gnip4j.api.model;
 
+import java.io.Serializable;
+
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;
 import javax.xml.bind.annotation.XmlRegistry;
@@ -22,8 +24,9 @@ import javax.xml.namespace.QName;
  *
  */
 @XmlRegistry
-public final class ObjectFactory {
+public final class ObjectFactory implements Serializable {
 
+	private static final long serialVersionUID = 1L;
     private final static QName _Languages_QNAME = new QName("https://labs.zaubersoftware.com/ns/2011/05/gnip4j/activity", "languages");
     private final static QName _Indices_QNAME = new QName("https://labs.zaubersoftware.com/ns/2011/05/gnip4j/activity", "indices");
     private final static QName _Value_QNAME = new QName("https://labs.zaubersoftware.com/ns/2011/05/gnip4j/activity", "value");
